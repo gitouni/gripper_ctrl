@@ -1,0 +1,32 @@
+common_argv: &common_argv
+  xy_list: [[0, 0], [540, 0], [540, 480]]
+  wh_list: [[540, 960], [640, 480], [640, 480]]
+  title_list: ['Grasping External View','Markerless (raw)','Marker (generated)']
+  total_wh: [1180, 960]
+video1:
+  argv:
+    <<: *common_argv
+    img_dir_list: ['video_imgs/grasp1','gripper_res/00/markerless','gripper_res/00/marker_motion_pic']
+    start_indices: [null, null, null]
+    end_indices: [null, null, null]
+    fps: 8.5714
+  output_file: gripper_res_video/concat_1.mp4
+
+video2:
+  img_dir_list: ['video_imgs/grasp2','gripper_res/01/markerless','gripper_res/01/marker_motion_pic']
+  output_file: gripper_res_video/concat_2.mp4
+  start_indices: [43, null, null]
+  end_indices: [null, null, null]
+  wh_list: [[270, 480], [480, 480], [480, 480]]
+  fps: 8.1
+
+video3:
+  img_dir_list: ['video_imgs/grasp3','gripper_res/02/markerless','gripper_res/02/marker_motion_pic']
+  output_file: gripper_res_video/concat_3.mp4
+  start_indices: [41, 114, 114]
+  end_indices: [null, null, null]
+  wh_list: [[270, 480], [480, 480], [480, 480]]
+  fps: 30.0
+
+video4:
+  

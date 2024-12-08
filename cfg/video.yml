@@ -1,0 +1,77 @@
+video1:
+  video1_common_argv: &video1_common_argv
+    fps: 8.4375
+    height: 480
+    width: 480
+    start_index: null
+    end_endex: null
+    repeat_num: 0
+  markerless:
+    output_file: gripper_res_video/markerless_00.avi
+    img_dir: gripper_res/00/markerless
+    <<: *video1_common_argv
+  ann:
+    output_file: gripper_res_video/ann_00.avi
+    img_dir: gripper_res/00/marker_motion_pic
+    <<: *video1_common_argv
+  vision:
+    output_file: gripper_res_video/vision_00.avi
+    img_dir: video_imgs/grasp1
+    fps: 30
+    height: 480
+    width: 270
+    start_index: null
+    end_endex: 202
+    repeat_num: 0
+
+video2:
+  video2_common_argv: &video2_common_argv
+    fps: 5.604395604395605
+    height: 480
+    width: 480
+    start_index: null
+    end_endex: 91
+    repeat_num: 0
+  markerless:
+    output_file: gripper_res_video/markerless_01.avi
+    img_dir: gripper_res/01/markerless
+    <<: *video2_common_argv
+  ann:
+    output_file: gripper_res_video/ann_01.avi
+    img_dir: gripper_res/01/marker_motion_pic
+    <<: *video2_common_argv
+  vision:
+    output_file: gripper_res_video/vision_01.avi
+    img_dir: video_imgs/grasp2
+    fps: 30
+    height: 480
+    width: 270
+    start_index: 160
+    end_endex: null
+    repeat_num: 0
+
+video4:
+  video4_common_argv: &video4_common_argv
+    fps: 29.568345323741006
+    height: 480
+    width: 480
+    start_index: null
+    end_endex: null
+    repeat_num: 0
+  markerless:
+    output_file: gripper_res_video/markerless_03.avi
+    img_dir: gripper_res/03/markerless
+    <<: *video4_common_argv
+  ann:
+    output_file: gripper_res_video/ann_03.avi
+    img_dir: gripper_res/03/marker_motion_pic
+    <<: *video4_common_argv
+  vision:
+    output_file: gripper_res_video/vision_04.avi
+    img_dir: video_imgs/grasp4
+    fps: 30
+    height: 480
+    width: 270
+    start_index: 0
+    end_endex: 225
+    repeat_num: 0

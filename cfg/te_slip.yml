@@ -1,0 +1,31 @@
+root:
+  data/slip_v2
+res: 
+  cup1: 1
+  cup2: 1
+  ex1: 1
+  ex2: 1
+  ex3: 1
+  ex4: 1
+  ex5: 1
+  ex6: 1
+  ex7: 1
+  ex8: 1
+  ex9: 1
+  ex11: 1
+  ex12: 1
+  ex13: 1
+  ex15: 1
+  static1: 0
+  static2: 0
+  static3: 0
+  static4: 0
+  static5: 0
+  static6: 0
+  static7: 0
+  static8: 0
+  static9: 0
+  vibration1: 0
+  vibration3: 0
+  vibration4: 0
+stream_fmt: "markerless/%04d.png"
